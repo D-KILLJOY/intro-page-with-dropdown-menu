@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav-bar">
+				<img src="./images/logo.svg" alt="" class="logo" />
+				<div class="menu-con">
+					<img
+						src="./images/icon-menu.svg"
+						alt=""
+						class="mobile-only menu-open nav-logo"
+					/>
+					<img
+						src="./images/icon-close-menu.svg"
+						alt=""
+						class="mobile-only menu-close nav-logo hidden"
+					/>
+				</div>
+
+				<ul class="nav-list">
+					<li class="list-item">
+						<a class="list-link flex features" href="#">
+							Features
+							<span class="icon">
+								<img
+									class="feat-arrow-up"
+									src="./images/icon-arrow-down.svg"
+									alt="" />
+								<img
+									class="feat-arrow-dwn arrow-hidden"
+									src="./images/icon-arrow-up.svg"
+									alt=""
+							/></span>
+						</a>
+						<ul class="feat-li feat-li-hidden">
+							<li class="features-li">
+								<a href="#">
+									<img src="./images/icon-todo.svg" alt="" class="feat-img" />
+									Todo List
+								</a>
+							</li>
+							<li class="features-li">
+								<a href="#">
+									<img
+										src="./images/icon-calendar.svg"
+										alt=""
+										class="feat-img"
+									/>
+									Calendar
+								</a>
+							</li>
+							<li class="features-li">
+								<a href="#">
+									<img
+										src="./images/icon-reminders.svg"
+										alt=""
+										class="feat-img"
+									/>
+									Reminders
+								</a>
+							</li>
+							<li class="features-li">
+								<a href="#">
+									<img
+										src="./images/icon-planning.svg"
+										alt=""
+										class="feat-img"
+									/>
+									Planning
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="list-item">
+						<a class="list-link flex company" href="#">
+							Company
+							<span class="icon">
+								<img
+									class="comp-arrow-dwn"
+									src="./images/icon-arrow-down.svg"
+									alt="" />
+								<img
+									class="comp-arrow-up arrow-hidden"
+									src="./images/icon-arrow-up.svg"
+									alt=""
+							/></span>
+						</a>
+						<ul class="comp-li comp-li-hidden">
+							<li><a href="#"> History</a></li>
+							<li><a href="#"> Our team</a></li>
+							<li><a href="#"> Blog</a></li>
+						</ul>
+					</li>
+					<li class="list-item"><a class="list-link" href="#">Careers</a></li>
+					<li class="list-item"><a class="list-link" href="#">About</a></li>
+					<div class="login-det">
+						<ul>
+							<li><a class="list-link" href="#">Login</a></li>
+							<li><a class="list-link register" href="#">Register</a></li>
+						</ul>
+					</div>
+				</ul>
+			</nav>
+		</header>
+		<section class="hero">
+			<img
+				src="./images/image-hero-mobile.png"
+				class="mobile-only mobile-hero-img"
+				alt=""
+			/>
+			<img
+				src="./images/image-hero-desktop.png"
+				class="desktop-only desktop-hero-img"
+				alt=""
+			/>
+			<div class="hero-text">
+				<h2>Make remote work</h2>
+				<p>
+					Get your team in sync, no matter your location. Streamline processes,
+					create team rituals, and watch productivity soar.
+				</p>
+				<button>Learn more</button>
+				<div class="sponsors">
+					<img class="spns-img" src="./images/client-databiz.svg" alt="" />
+					<img class="spns-img-b" src="./images/client-audiophile.svg" alt="" />
+					<img class="spns-img" src="./images/client-meet.svg" alt="" />
+					<img class="spns-img-c" src="./images/client-maker.svg" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="http://www.linktr.ee/didiauche">Didia Uchenna</a>.
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
