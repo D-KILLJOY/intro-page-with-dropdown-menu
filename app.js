@@ -23,33 +23,49 @@ navLogo.addEventListener("click", () => {
 });
 
 features.addEventListener("click", () => {
-	let hidden = featMenu.classList.contains("feat-li-hidden");
-	const arwUp = document.querySelector(".feat-arrow-up");
-	const arwDwn = document.querySelector(".feat-arrow-dwn");
+	let featHidden = featMenu.classList.contains("feat-li-hidden");
+	const featArwUp = document.querySelector(".feat-arrow-up");
+	const featArwDwn = document.querySelector(".feat-arrow-dwn");
 
-	if (hidden) {
+	let compHidden = compMenu.classList.contains("comp-li-hidden");
+	const compArwUp = document.querySelector(".comp-arrow-up");
+	const compArwDwn = document.querySelector(".comp-arrow-dwn");
+
+	if (featHidden) {
 		featMenu.classList.remove("feat-li-hidden");
-		arwUp.classList.add("arrow-hidden");
-		arwDwn.classList.remove("arrow-hidden");
+		featArwUp.classList.add("arrow-hidden");
+		featArwDwn.classList.remove("arrow-hidden");
+
+		compMenu.classList.add("comp-li-hidden");
+		compArwUp.classList.add("arrow-hidden");
+		compArwDwn.classList.remove("arrow-hidden");
 	} else {
 		featMenu.classList.add("feat-li-hidden");
-		arwUp.classList.remove("arrow-hidden");
-		arwDwn.classList.add("arrow-hidden");
+		featArwUp.classList.remove("arrow-hidden");
+		featArwDwn.classList.add("arrow-hidden");
 	}
 });
 
 company.addEventListener("click", () => {
-	let hidden = compMenu.classList.contains("comp-li-hidden");
-	const arwUp = document.querySelector(".comp-arrow-up");
-	const arwDwn = document.querySelector(".comp-arrow-dwn");
+	let featHidden = featMenu.classList.contains("feat-li-hidden");
+	const featArwUp = document.querySelector(".feat-arrow-up");
+	const featArwDwn = document.querySelector(".feat-arrow-dwn");
 
-	if (hidden) {
+	let compHidden = compMenu.classList.contains("comp-li-hidden");
+	const compArwUp = document.querySelector(".comp-arrow-up");
+	const compArwDwn = document.querySelector(".comp-arrow-dwn");
+
+	if (compHidden) {
 		compMenu.classList.remove("comp-li-hidden");
-		arwUp.classList.remove("arrow-hidden");
-		arwDwn.classList.add("arrow-hidden");
+		compArwUp.classList.remove("arrow-hidden");
+		compArwDwn.classList.add("arrow-hidden");
+
+		featMenu.classList.add("feat-li-hidden");
+		featArwUp.classList.remove("arrow-hidden");
+		featArwDwn.classList.add("arrow-hidden");
 	} else {
 		compMenu.classList.add("comp-li-hidden");
-		arwUp.classList.add("arrow-hidden");
-		arwDwn.classList.remove("arrow-hidden");
+		compArwUp.classList.add("arrow-hidden");
+		compArwDwn.classList.remove("arrow-hidden");
 	}
 });
