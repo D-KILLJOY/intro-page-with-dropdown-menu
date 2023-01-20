@@ -84,11 +84,13 @@ button {
 	padding: 8rem 2rem 0;
 	transform: translateX(40rem);
 	transition: transform 1s;
+	display: none;
 }
 
 .nav-list-show {
 	transform: translateX(0);
 	transition: transform 1s;
+	display: block;
 }
 
 .list-item {
